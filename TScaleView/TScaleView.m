@@ -92,7 +92,7 @@
         case TScaleDown:
         {
             self.subview.layer.position = CGPointMake(0, 0);
-            self.subview.layer.anchorPoint = CGPointMake(0, 1);
+            self.subview.layer.anchorPoint = CGPointMake(0, 0);
             animation.keyPath = @"bounds.size.height";
         }
             break;
