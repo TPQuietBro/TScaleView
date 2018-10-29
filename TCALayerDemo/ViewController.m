@@ -7,9 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "TScaleView.h"
 
 @interface ViewController ()
-@property (weak, nonatomic) UIView *subview;
+@property (weak, nonatomic) TScaleView *subview;
 @property (weak, nonatomic) IBOutlet UITextField *t1;
 @property (weak, nonatomic) IBOutlet UITextField *t2;
 @property (weak, nonatomic) IBOutlet UITextField *t3;
@@ -23,10 +24,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UIView *subview = [UIView new];
-    subview.backgroundColor = [UIColor purpleColor];
+//    TScaleView *subview = [[TScaleView alloc] initWithDirection:TScaleRight];
+//    TScaleView *subview = [[TScaleView alloc] initWithDirection:TScaleLeft];
+//    TScaleView *subview = [[TScaleView alloc] initWithDirection:TScaleUp];
+    TScaleView *subview = [[TScaleView alloc] initWithDirection:TScaleDown];
+    subview.backgroundColor = [UIColor lightGrayColor];
     [self.view addSubview:subview];
-    subview.frame = CGRectMake(0, 0, 100, 100);
+    subview.frame = CGRectMake(0, 0, 200, 200);
     self.subview = subview;
     
     self.oriPostion = self.subview.layer.position;

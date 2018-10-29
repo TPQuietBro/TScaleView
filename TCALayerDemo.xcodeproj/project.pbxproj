@@ -13,6 +13,7 @@
 		D71B5E1D21874EA1000FE5BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D71B5E1C21874EA1000FE5BD /* Assets.xcassets */; };
 		D71B5E2021874EA1000FE5BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D71B5E1E21874EA1000FE5BD /* LaunchScreen.storyboard */; };
 		D71B5E2321874EA1000FE5BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D71B5E2221874EA1000FE5BD /* main.m */; };
+		D71B5E2C21875D1F000FE5BD /* TScaleView.m in Sources */ = {isa = PBXBuildFile; fileRef = D71B5E2B21875D1F000FE5BD /* TScaleView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		D71B5E1F21874EA1000FE5BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D71B5E2121874EA1000FE5BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D71B5E2221874EA1000FE5BD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D71B5E2A21875D1F000FE5BD /* TScaleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TScaleView.h; sourceTree = "<group>"; };
+		D71B5E2B21875D1F000FE5BD /* TScaleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TScaleView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +45,7 @@
 		D71B5E0721874E9F000FE5BD = {
 			isa = PBXGroup;
 			children = (
+				D71B5E2921875D0F000FE5BD /* TScaleView */,
 				D71B5E1221874E9F000FE5BD /* TCALayerDemo */,
 				D71B5E1121874E9F000FE5BD /* Products */,
 			);
@@ -69,6 +73,15 @@
 				D71B5E2221874EA1000FE5BD /* main.m */,
 			);
 			path = TCALayerDemo;
+			sourceTree = "<group>";
+		};
+		D71B5E2921875D0F000FE5BD /* TScaleView */ = {
+			isa = PBXGroup;
+			children = (
+				D71B5E2A21875D1F000FE5BD /* TScaleView.h */,
+				D71B5E2B21875D1F000FE5BD /* TScaleView.m */,
+			);
+			path = TScaleView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +156,7 @@
 			files = (
 				D71B5E1821874E9F000FE5BD /* ViewController.m in Sources */,
 				D71B5E2321874EA1000FE5BD /* main.m in Sources */,
+				D71B5E2C21875D1F000FE5BD /* TScaleView.m in Sources */,
 				D71B5E1521874E9F000FE5BD /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
